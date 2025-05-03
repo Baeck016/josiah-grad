@@ -64,15 +64,26 @@ const FlipCard = () => {
       <Card frontimage="images/18.png" backimage="images/19.png" />
       <Card frontimage="images/20.png" backimage="images/21.png" />
       <Card frontimage="images/22.png" backimage="images/23.png" />
-      <Text
-        textColor="white"
-        textAlign="center"
-        fontWeight="bold"
-        fontSize="1.5rem"
+      <Box
+        position="sticky"
+        bottom="0"
+        left="0"
+        right="0"
+        bgColor="#ee252c"
+        width="100%"
+        py={4}
+        zIndex="sticky"
       >
-        PLEASE TITHE! <br />
-        DON'T GAMBLE IT'S NOT WORTH IT
-      </Text>
+        <Text
+          textColor="white"
+          textAlign="center"
+          fontWeight="bold"
+          fontSize={{ base: "1.3rem", md: "1.5rem" }}
+        >
+          PLEASE TITHE! <br />
+          DON'T GAMBLE IT'S NOT WORTH IT
+        </Text>
+      </Box>
     </VStack>
   );
 };
